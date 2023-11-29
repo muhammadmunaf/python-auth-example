@@ -45,7 +45,7 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: python-sample-app-action/python-sample-app-actions:latest
+                  tags: munafhassan23/python-sample-app-actions:latest
 
     deploy:
         needs: build-and-push-docker
