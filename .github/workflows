@@ -44,11 +44,11 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: yourusername/yourapp:latest
+          tags: python-sample-app/python-sample-app:latest
 
   deploy:
     needs: build-and-push-docker
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Server
-        run: echo "Deploying the application" # Replace this with your actual deployment script
+        run: echo "Deploying the application now" 
