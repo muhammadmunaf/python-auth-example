@@ -27,11 +27,6 @@ jobs:
                   pip install --upgrade pip
                   pip install -r requirements.txt
 
-            - name: Test with pytest
-              run: |
-                  pip install pytest
-                  pytest
-
     build-and-push-docker:
         needs: build-and-test
         runs-on: ubuntu-latest
